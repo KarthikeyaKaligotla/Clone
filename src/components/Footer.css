@@ -1,0 +1,227 @@
+.footer {
+    background: var(--nb-white);
+}
+
+/* Main Footer */
+.footer__main {
+    padding: var(--sp-3xl) 0 var(--sp-2xl);
+    border-top: 1px solid var(--nb-border);
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+    gap: var(--sp-xl);
+}
+
+/* Brand */
+.footer__logo {
+    display: flex;
+    align-items: baseline;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: var(--sp-md);
+}
+
+.footer__logo:hover {
+    color: inherit;
+}
+
+.footer__logo-no {
+    color: var(--nb-red);
+}
+
+.footer__logo-broker {
+    color: var(--nb-dark);
+}
+
+.footer__logo-dot {
+    color: var(--nb-gray-light);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer__tagline {
+    font-size: var(--fs-sm);
+    color: var(--nb-gray);
+    line-height: 1.5;
+    margin-bottom: var(--sp-lg);
+    max-width: 260px;
+}
+
+.footer__social {
+    display: flex;
+    gap: var(--sp-sm);
+}
+
+.footer__social-link {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-full);
+    background: var(--nb-bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nb-gray);
+    font-size: 14px;
+    transition: all var(--transition-fast);
+}
+
+.footer__social-link:hover {
+    background: var(--nb-red);
+    color: var(--nb-white);
+}
+
+/* Column */
+.footer__column-title {
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    color: var(--nb-dark);
+    margin-bottom: var(--sp-base);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer__column-list li {
+    margin-bottom: var(--sp-sm);
+}
+
+.footer__column-list a {
+    font-size: var(--fs-sm);
+    color: var(--nb-gray);
+    transition: color var(--transition-fast);
+}
+
+.footer__column-list a:hover {
+    color: var(--nb-red);
+}
+
+/* SEO Links */
+.footer__seo {
+    background: var(--nb-bg-light);
+    padding: var(--sp-xl) 0;
+    border-top: 1px solid var(--nb-border);
+}
+
+.footer__seo-tabs {
+    display: flex;
+    gap: var(--sp-xs);
+    margin-bottom: var(--sp-lg);
+    flex-wrap: wrap;
+}
+
+.footer__seo-tab {
+    padding: var(--sp-sm) var(--sp-base);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    color: var(--nb-gray);
+    background: var(--nb-white);
+    border: 1px solid var(--nb-border);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.footer__seo-tab:hover,
+.footer__seo-tab.active {
+    background: var(--nb-red);
+    color: var(--nb-white);
+    border-color: var(--nb-red);
+}
+
+.footer__seo-content {
+    max-height: 200px;
+    overflow: hidden;
+    transition: max-height var(--transition-slow);
+}
+
+.footer__seo-content.expanded {
+    max-height: 2000px;
+}
+
+.footer__seo-city {
+    margin-bottom: var(--sp-base);
+}
+
+.footer__seo-city-name {
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    color: var(--nb-dark);
+    margin-bottom: var(--sp-sm);
+}
+
+.footer__seo-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-xs);
+}
+
+.footer__seo-link {
+    font-size: var(--fs-xs);
+    color: var(--nb-blue);
+    padding: 2px 0;
+}
+
+.footer__seo-link::after {
+    content: ' | ';
+    color: var(--nb-border);
+    margin-left: var(--sp-xs);
+}
+
+.footer__seo-link:last-child::after {
+    content: '';
+}
+
+.footer__seo-link:hover {
+    color: var(--nb-red);
+}
+
+.footer__seo-toggle {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-xs);
+    margin-top: var(--sp-base);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--nb-red);
+    cursor: pointer;
+    transition: opacity var(--transition-fast);
+}
+
+.footer__seo-toggle:hover {
+    opacity: 0.8;
+}
+
+/* Copyright */
+.footer__copyright {
+    padding: var(--sp-lg) 0;
+    border-top: 1px solid var(--nb-border);
+    text-align: center;
+}
+
+.footer__copyright p {
+    font-size: var(--fs-xs);
+    color: var(--nb-gray-light);
+    margin-bottom: 2px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer__inner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer__brand {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer__inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__seo-tabs {
+        gap: var(--sp-xs);
+    }
+}

@@ -1,0 +1,26 @@
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.status-badge--occupied {
+    background: #fdeaec;
+    color: var(--nb-red);
+}
+
+.status-badge--available {
+    background: #fff8e1;
+    color: #e6a800;
+}
+
+.status-badge--reserved {
+    background: #e8f5e9;
+    color: var(--nb-green);
+}

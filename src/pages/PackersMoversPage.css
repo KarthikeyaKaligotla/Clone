@@ -1,0 +1,233 @@
+.pm-page {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.pm-hero {
+    background: linear-gradient(135deg, #00b865 0%, #009950 100%);
+    padding: 60px 0 80px;
+    color: white;
+}
+
+.pm-hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.pm-hero__content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.pm-hero__title {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.pm-hero__desc {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+.pm-hero__stats {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-flex;
+}
+
+.dot {
+    opacity: 0.5;
+}
+
+/* Quote Box */
+.pm-quote-box {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    color: #333;
+}
+
+.pm-quote-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pm-quote-tabs {
+    display: flex;
+    background: #f0f0f0;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 4px;
+}
+
+.pm-quote-tab {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pm-quote-tab.active {
+    background: white;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.pm-quote-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pm-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pm-form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+}
+
+.pm-form-group input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.pm-form-group input:focus {
+    outline: none;
+    border-color: #00b865;
+}
+
+.pm-quote-btn {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.pm-quote-btn:hover {
+    background: #cc3333;
+}
+
+.pm-section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.pm-how {
+    padding: 60px 0;
+}
+
+.pm-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.pm-step-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.pm-step-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.pm-step-card h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pm-step-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.pm-benefits {
+    background: #333;
+    color: white;
+    padding: 40px 0;
+}
+
+.pm-benefits-inner {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.pm-benefit {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.pm-benefit-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #00b865;
+    margin-bottom: 10px;
+}
+
+.pm-benefit p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+    .pm-hero__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pm-hero__title {
+        font-size: 36px;
+    }
+
+    .pm-hero__desc {
+        margin: 0 auto 20px;
+    }
+
+    .pm-benefits-inner {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

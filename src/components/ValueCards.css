@@ -1,0 +1,84 @@
+.value-cards {
+    padding: 32px 0 24px;
+    background: #fff;
+    border-top: 1px solid #e8e8e8;
+}
+
+.value-cards__inner {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.value-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 12px 12px;
+    min-width: 100px;
+    max-width: 120px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    position: relative;
+}
+
+.value-card:hover {
+    background: #f5f5f5;
+    color: inherit;
+}
+
+.value-card__badge {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.value-card__icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    background: #f8f8f8;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+.value-card__title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+    .value-cards__inner {
+        gap: 4px;
+    }
+
+    .value-card {
+        min-width: 80px;
+        max-width: 95px;
+        padding: 12px 8px 8px;
+    }
+
+    .value-card__icon {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+    }
+
+    .value-card__title {
+        font-size: 10px;
+    }
+}

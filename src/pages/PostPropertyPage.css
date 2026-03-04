@@ -1,0 +1,461 @@
+.post-property-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-property {
+    flex: 1;
+    padding: 32px 0 48px;
+    background: #fff;
+}
+
+/* Header */
+.post-property__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.post-property__title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #303030;
+    letter-spacing: -0.3px;
+}
+
+.post-property__back-link {
+    font-size: 13px;
+    color: #666;
+}
+
+.post-property__back-link span {
+    color: #0078db;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.post-property__back-link:hover span {
+    color: #005fa3;
+}
+
+/* Content Layout */
+.post-property__content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* ===== Left Sidebar ===== */
+.post-property__sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    padding: 24px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.post-property__sidebar-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #e63946;
+    margin-bottom: 20px;
+}
+
+.post-property__benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.post-property__benefit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.post-property__benefit-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.post-property__benefit-text {
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+}
+
+.post-property__benefit-text--red {
+    color: #e63946;
+    font-weight: 600;
+}
+
+/* Testimonial */
+.post-property__testimonial {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+}
+
+.post-property__testimonial-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #e63946;
+    margin-bottom: 12px;
+}
+
+.post-property__testimonial-text {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.post-property__testimonial-author {
+    font-size: 12px;
+    color: #303030;
+}
+
+.post-property__testimonial-author strong {
+    font-weight: 700;
+}
+
+/* ===== Right Form ===== */
+.post-property__form-section {
+    flex: 1;
+    max-width: 580px;
+}
+
+/* Form Row */
+.post-property__form-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.post-property__input {
+    flex: 1;
+    padding: 12px 14px;
+    font-size: 14px;
+    color: #303030;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    outline: none;
+    font-family: inherit;
+    transition: border-color 0.15s ease;
+    background: #fff;
+}
+
+.post-property__input:focus {
+    border-color: #e63946;
+}
+
+.post-property__input::placeholder {
+    color: #aaa;
+}
+
+/* Phone Input */
+.post-property__phone-input {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: border-color 0.15s ease;
+}
+
+.post-property__phone-input:focus-within {
+    border-color: #e63946;
+}
+
+.post-property__country {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 12px 10px;
+    border-right: 1px solid #d0d0d0;
+    background: #fafafa;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.post-property__flag {
+    font-size: 16px;
+}
+
+.post-property__code {
+    font-size: 13px;
+    font-weight: 600;
+    color: #303030;
+}
+
+.post-property__input--phone {
+    border: none;
+    border-radius: 0;
+}
+
+/* Select */
+.post-property__select-wrap {
+    flex: 1;
+    position: relative;
+}
+
+.post-property__select {
+    width: 100%;
+    padding: 12px 36px 12px 14px;
+    font-size: 14px;
+    color: #303030;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    background: #fff;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.15s ease;
+}
+
+.post-property__select:focus {
+    border-color: #e63946;
+}
+
+.post-property__select-arrow {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #999;
+}
+
+/* WhatsApp Toggle */
+.post-property__whatsapp {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 28px;
+    font-size: 13px;
+    color: #555;
+}
+
+.post-property__whatsapp-icon {
+    font-size: 16px;
+}
+
+.post-property__whatsapp-label {
+    font-weight: 600;
+    color: #303030;
+}
+
+.post-property__toggle {
+    width: 40px;
+    height: 22px;
+    border-radius: 11px;
+    background: #ccc;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    border: none;
+    padding: 0;
+    margin-left: 4px;
+}
+
+.post-property__toggle.active {
+    background: #00b865;
+}
+
+.post-property__toggle-knob {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    transition: transform 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.post-property__toggle.active .post-property__toggle-knob {
+    transform: translateX(18px);
+}
+
+/* Sections */
+.post-property__section {
+    margin-bottom: 24px;
+}
+
+.post-property__section-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #303030;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* Property Type Tabs */
+.post-property__type-tabs {
+    display: flex;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.post-property__type-tab {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #888;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.15s ease;
+    font-family: inherit;
+    text-align: center;
+}
+
+.post-property__type-tab.active {
+    color: #303030;
+}
+
+.post-property__type-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #303030;
+}
+
+.post-property__type-tab:hover:not(.active) {
+    color: #555;
+}
+
+.post-property__type-badge {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    font-size: 9px;
+    font-weight: 700;
+    color: #e63946;
+}
+
+/* Ad Type Buttons */
+.post-property__ad-types {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.post-property__ad-btn {
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-family: inherit;
+}
+
+.post-property__ad-btn:hover {
+    border-color: #00b865;
+    color: #00b865;
+}
+
+.post-property__ad-btn.active {
+    background: #00b865;
+    color: #fff;
+    border-color: #00b865;
+}
+
+/* Submit Button */
+.post-property__submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: #e63946;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    font-family: inherit;
+    margin-top: 8px;
+}
+
+.post-property__submit-btn:hover {
+    background: #d62839;
+}
+
+/* Missed Call Banner */
+.post-property__call-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 24px;
+    background: linear-gradient(90deg, #1a3a3a, #1e4040, #1a3a3a);
+    flex-wrap: wrap;
+}
+
+.post-property__call-icon {
+    font-size: 16px;
+}
+
+.post-property__call-text {
+    font-size: 13px;
+    color: #d0d0d0;
+}
+
+.post-property__call-text strong {
+    color: #fff;
+    font-weight: 700;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+    .post-property__content {
+        flex-direction: column;
+    }
+
+    .post-property__sidebar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .post-property__form-row {
+        flex-direction: column;
+    }
+
+    .post-property__title {
+        font-size: 20px;
+    }
+
+    .post-property__ad-types {
+        flex-wrap: wrap;
+    }
+
+    .post-property__ad-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}

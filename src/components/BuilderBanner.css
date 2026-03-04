@@ -1,0 +1,123 @@
+.builder-banner {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    overflow: hidden;
+}
+
+.builder-banner__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--sp-3xl) var(--sp-base);
+    gap: var(--sp-2xl);
+}
+
+.builder-banner__content {
+    max-width: 520px;
+}
+
+.builder-banner__label {
+    display: inline-block;
+    padding: var(--sp-xs) var(--sp-md);
+    background: rgba(230, 57, 70, 0.15);
+    color: var(--nb-red);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    border-radius: 20px;
+    margin-bottom: var(--sp-base);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.builder-banner__title {
+    font-size: var(--fs-2xl);
+    font-weight: 800;
+    color: var(--nb-white);
+    margin-bottom: var(--sp-base);
+    line-height: 1.3;
+}
+
+.builder-banner__text {
+    font-size: var(--fs-base);
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin-bottom: var(--sp-xl);
+}
+
+.builder-banner__btn {
+    padding: var(--sp-md) var(--sp-xl);
+    background: var(--nb-red);
+    color: var(--nb-white);
+    font-size: var(--fs-base);
+    font-weight: 700;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.builder-banner__btn:hover {
+    background: var(--nb-red-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(230, 57, 70, 0.4);
+}
+
+/* Decorative Buildings */
+.builder-banner__visual {
+    flex-shrink: 0;
+}
+
+.builder-banner__buildings {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    height: 200px;
+}
+
+.builder-banner__building {
+    border-radius: 4px 4px 0 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.builder-banner__building::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    background: repeating-linear-gradient(180deg,
+            transparent,
+            transparent 10px,
+            rgba(255, 255, 255, 0.08) 10px,
+            rgba(255, 255, 255, 0.08) 12px);
+}
+
+.builder-banner__building--1 {
+    width: 50px;
+    height: 120px;
+}
+
+.builder-banner__building--2 {
+    width: 60px;
+    height: 180px;
+}
+
+.builder-banner__building--3 {
+    width: 45px;
+    height: 150px;
+}
+
+@media (max-width: 768px) {
+    .builder-banner__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .builder-banner__visual {
+        display: none;
+    }
+
+    .builder-banner__title {
+        font-size: var(--fs-xl);
+    }
+}
